@@ -9,7 +9,9 @@ class TaskController extends Controller
 {
     public function index()
     {
-        return Task::all();
+        $tasks = Task::all();
+
+        return response()->json($tasks);
     }
 
     public function store(Request $request)
@@ -35,8 +37,8 @@ class TaskController extends Controller
     public function update(Request $request, Task $task)
     {
         $request->validate([
-           'title' => 'required',
-           'description' => 'required'
+           'title'       => 'nullable',
+           'description' => 'nullable'
         ]);
 
         $task->update($request->all());
