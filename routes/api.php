@@ -17,7 +17,7 @@ Route::post('/register', 'AuthController@register');
 
 Route::post('/login', 'AuthController@login');
 
-Route::post('logout', 'AuthController@logout');
+Route::post('/logout', 'AuthController@logout');
 
 Route::get('/tasks', 'TaskController@index')->name('tasks.index');
 

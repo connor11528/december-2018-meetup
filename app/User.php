@@ -11,16 +11,6 @@ class User extends Authenticatable implements JWTSubject
 {
     use Notifiable;
 
-    public function getJWTIdentifier()
-    {
-        return $this->getKey();
-    }
-
-    public function getJWTCustomClaims()
-    {
-        return [];
-    }
-
     /**
      * The attributes that are mass assignable.
      *
@@ -38,4 +28,21 @@ class User extends Authenticatable implements JWTSubject
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    public function getJWTCustomClaims()
+    {
+        return [];
+    }
+
+    public function setPasswordAttribute($password)
+    {
+        if ( $password !== null & $password !== "" ) {
+            $this->attributes['password'] = bcrypt($password);
+        }
+    }
 }
