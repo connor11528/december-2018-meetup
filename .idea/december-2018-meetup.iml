@@ -31,6 +31,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/namshi/jose" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nesbot/carbon" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nexmo/client" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nikic/php-parser" />
@@ -81,13 +82,16 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/http-kernel" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-ctype" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php56" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-util" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/process" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/routing" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/translation" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tymon/jwt-auth" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-diactoros" />

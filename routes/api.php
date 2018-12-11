@@ -13,6 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::post('/register', 'AuthController@register');
+
+Route::post('/login', 'AuthController@login');
+
+Route::post('logout', 'AuthController@logout');
+
 Route::get('/tasks', 'TaskController@index')->name('tasks.index');
 
 Route::post('/tasks', 'TaskController@store')->name('tasks.store');
