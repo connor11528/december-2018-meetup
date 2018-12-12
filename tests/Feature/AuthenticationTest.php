@@ -5,8 +5,6 @@ namespace Tests\Feature;
 use App\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class AuthenticationTest extends TestCase
 {
@@ -65,14 +63,5 @@ class AuthenticationTest extends TestCase
         $response->assertJsonStructure([
             'error',
         ]);
-    }
-
-    /** @test */
-    public function it_will_log_a_user_out()
-    {
-        // todo
-//        $response = $this->post('api/logout');
-//
-//        $response->assertJson(['message' => 'Successfully logged out']);
     }
 }
